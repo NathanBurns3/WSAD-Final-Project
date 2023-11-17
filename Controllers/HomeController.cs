@@ -25,6 +25,7 @@ public class HomeController : Controller
 
     public IActionResult Nathan()
     {
+        Console.WriteLine("Nathan");
         return View("Nathan");
     }
 

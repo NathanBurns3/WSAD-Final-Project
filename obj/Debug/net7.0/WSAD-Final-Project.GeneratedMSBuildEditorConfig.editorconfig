@@ -20,12 +20,12 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/nathanburns/Projects/WSAD-Final-Project/Views/Home/Nathan.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9OYXRoYW4uY3NodG1s
-build_metadata.AdditionalFiles.CssScope = 
-
 [/Users/nathanburns/Projects/WSAD-Final-Project/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Qcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/nathanburns/Projects/WSAD-Final-Project/Views/Nathan/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvTmF0aGFuL0luZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/nathanburns/Projects/WSAD-Final-Project/Views/Shared/Error.cshtml]

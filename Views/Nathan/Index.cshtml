@@ -1,0 +1,42 @@
+@model List<SnowboardGear>
+
+@{
+    ViewData["Title"] = "Snowboard Gear";
+}
+
+<div class="text-center bg-light">
+    <h1 class="display-4 mb-2 text-primary">Nathan Burns</h1>
+    <h4 class="mb-3 text-secondary">Snowboarding</h4>
+    <div class="col-md-8 mx-auto">
+        <p class="mb-5 px-5 text-dark">
+            I've been snowboarding since I was 10, mostly at Perfect North Slopes in Indiana. Last winter,
+            I had the chance to explore Aspen, Colorado, riding at Snowmass, Aspen Mountain, and Aspen
+            Highlands. This winter, I'm looking forward to checking out Keystone, Colorado.
+        </p>
+    </div>
+
+    <h4 class="display-4 mt-5 text-primary">Snowboard Gear</h4>
+    <div class="table-responsive mb-5">
+        <table class="table table-striped table-hover">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>Gear ID</th>
+                    <th>Gear Type</th>
+                    <th>Brand</th>
+                    <th>Model</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var gear in Model)
+                {
+                    <tr>
+                        <td>@gear.GearId</td>
+                        <td>@gear.GearType</td>
+                        <td>@gear.Brand</td>
+                        <td>@gear.Model</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
