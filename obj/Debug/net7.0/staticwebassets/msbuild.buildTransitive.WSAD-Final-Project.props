@@ -1,3 +1,3 @@
 ﻿<Project>
-  <Import Project="..\buildMultiTargeting\WSAD-Final-Project.props" />
+  <Import Project="../buildMultiTargeting/WSAD-Final-Project.props" />
 </Project>

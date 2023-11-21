@@ -2884,26 +2884,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tommy\\.nuget\\packages\\": {}
+    "/Users/nathanburns/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
+      "projectUniqueName": "/Users/nathanburns/Projects/WSAD-Final-Project/WSAD-Final-Project.csproj",
       "projectName": "WSAD-Final-Project",
-      "projectPath": "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
-      "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\obj\\",
+      "projectPath": "/Users/nathanburns/Projects/WSAD-Final-Project/WSAD-Final-Project.csproj",
+      "packagesPath": "/Users/nathanburns/.nuget/packages/",
+      "outputPath": "/Users/nathanburns/Projects/WSAD-Final-Project/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\tommy\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/Users/nathanburns/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "/usr/local/share/dotnet/sdk/7.0.307/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -2952,7 +2951,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.307/RuntimeIdentifierGraph.json"
       }
     }
   }
