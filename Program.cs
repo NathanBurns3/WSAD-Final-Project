@@ -10,6 +10,8 @@ builder.Configuration.AddJsonFile("appsettings.Secrets.json", optional: true);
 
 builder.Services.AddDbContext<HobbyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("HobbyContext")));
+builder.Services.AddDbContext<CarsContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("CarsContext")));
 
 var app = builder.Build();
 

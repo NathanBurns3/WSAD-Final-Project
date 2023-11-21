@@ -1,0 +1,43 @@
+@model List<Cars>
+
+@{
+    ViewData["Title"] = "Vehicles I've Owned";
+}
+
+<div class="text-center bg-light">
+    <h1 class="display-4 mb-2 text-primary">Tom McReynolds</h1>
+    <h4 class="mb-3 text-secondary">Cars</h4>
+    <div class="col-md-8 mx-auto">
+        <p class="mb-5 px-5 text-dark">
+            Ever since I have been able to drive, I have had a huge passion for cars. From racing, to pulling engines,
+            cars have been a huge part of my life. I have owned many cars over the last few years, so I have listed every vehicle I have owned below.
+        </p>
+    </div>
+
+    <h4 class="display-4 mt-5 text-primary">My vehicles</h4>
+    <div class="table-responsive mb-5">
+        <table class="table table-striped table-hover">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>Vehicle Id</th>
+                    <th>Make</th>
+                    <th>Model</th>
+                    <th>Year</th>
+                    <th>Year Purchased</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var car in Model)
+                {
+                    <tr>
+                        <td>@car.CarId</td>
+                        <td>@car.CarMake</td>
+                        <td>@car.CarModel</td>
+                        <td>@car.CarYear</td>
+                        <td>@car.BoughtYear</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
