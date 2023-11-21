@@ -29,6 +29,11 @@ public class HomeController : Controller
         return View("Nathan");
     }
 
+    public IActionResult Tom()
+    {
+        return View("Tom");
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Error()
     {
