@@ -67,6 +67,7 @@ namespace WSAD_Final_Project.Models
         public string? CarModel { get; set; }
 
         [Required(ErrorMessage = "Please enter a car year")]
+        [Range(1900, 2023, ErrorMessage = "Please enter a valid year")]
         public int? CarYear { get; set; }
 
         [Required(ErrorMessage = "Please enter when you bought the car")]

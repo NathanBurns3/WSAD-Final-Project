@@ -1,0 +1,30 @@
+@model WSAD_Final_Project.Models.Cars
+
+<form asp-action="Add" method="post">
+    <div class="form-group">
+        <label for="carMake">Car Make:</label>
+        <select id="carMake" name="CarMake" class="form-control" required>
+            @foreach (var carMake in Enum.GetValues(typeof(CarMake)))
+            {
+                <option value="@carMake">@carMake</option>
+            }
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="carModel">Car Model:</label>
+        <input type="text" id="carModel" name="CarModel" class="form-control" required />
+    </div>
+
+    <div class="form-group">
+        <label for="carYear">Car Year:</label>
+        <input type="number" id="carYear" name="CarYear" class="form-control" required min="1900" max="2023" />
+    </div>
+
+    <div class="form-group">
+        <label for="boughtYear">Bought Year:</label>
+        <input type="number" id="boughtYear" name="BoughtYear" class="form-control" required min="1900" max="2023" />
+    </div>
+
+    <input type="submit" value="Add Car" class="btn btn-primary" />
+</form>
