@@ -1,8 +1,29 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+
+    var teamMembers = new List<Dictionary<string, string>>
+    {
+        new Dictionary<string, string> { { "name", "Nathan" }, { "hobby", "Snowboarding" } },
+        new Dictionary<string, string> { { "name", "Tom" }, { "hobby", "Cars" } },
+        new Dictionary<string, string> { { "name", "Simon" }, { "hobby", "placeholder" } },
+        new Dictionary<string, string> { { "name", "Vishvak" }, { "hobby", "placeholder" } }
+    };
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="text-center bg-light p-5" style="height: 600px;">
+    <h1 class="display-4 mt-5 text-primary">Welcome to our IT3047C final project</h1>
+    <h3 class="mt-5 mb-4 text-secondary">Meet our team:</h3>
+    <div class="row">
+        @foreach (var member in teamMembers)
+        {
+            <div class="col-sm-6 col-md-3">
+                <div class="card bg-primary text-white">
+                    <div class="card-body">
+                        <h5 class="card-title">@member["name"]</h5>
+                        <p class="card-text">Hobby: @member["hobby"]</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
 </div>
