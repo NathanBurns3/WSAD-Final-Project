@@ -11,6 +11,8 @@ namespace WSAD_Final_Project.Models
 
         public DbSet<SnowboardGear> SnowboardGear { get; set; }
 
+        public DbSet<GolfGear> golfGears { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -21,6 +23,14 @@ namespace WSAD_Final_Project.Models
                 new SnowboardGear { GearId = 3, GearType = GearType.Boots, Brand = Brand.Vans, Model = "Hi-Standard" },
                 new SnowboardGear { GearId = 4, GearType = GearType.Jacket, Brand = Brand.Oakley, Model = "Snow Shell" },
                 new SnowboardGear { GearId = 5, GearType = GearType.Goggles, Brand = Brand.Smith, Model = "I/O Mag" }
+            );
+
+            modelBuilder.Entity<GolfGear>().HasData(
+                new GolfGear { Name = "Paradym", Brand = "Callaway", Type = "Driver"},
+                new GolfGear { Name = "Stealth 2", Brand = "Taylormade", Type = "Driver" },
+                new GolfGear { Name = "Vokey", Brand = "Titleist", Type = "Wedge" },
+                new GolfGear { Name = "G425", Brand = "Ping", Type = "Irons" },
+                new GolfGear { Name = "Spider", Brand = "Taylormade", Type = "Putter" }
             );
         }
     }
