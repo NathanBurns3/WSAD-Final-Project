@@ -1,1 +1,3 @@
 appsettings.Secrets.json
+obj/
+bin/
