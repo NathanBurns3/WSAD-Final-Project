@@ -1,0 +1,33 @@
+@model SnowboardGear
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="GearId" />
+    <div class="form-group">
+        <label asp-for="GearType" class="control-label">Gear Type</label>
+        <select asp-for="GearType" class="form-control" asp-items="Html.GetEnumSelectList<GearType>()">
+            <option selected="selected" value="">Please select</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Brand" class="control-label">Brand</label>
+        <select asp-for="Brand" class="form-control" asp-items="Html.GetEnumSelectList<Brand>()">
+            <option selected="selected" value="">Please select</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label asp-for="Model" class="control-label">Model</label>
+        <input asp-for="Model" class="form-control" />
+    </div>
+    <div class="form-group mt-3 mb-2">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
