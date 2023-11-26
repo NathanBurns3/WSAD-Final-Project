@@ -26,11 +26,11 @@ namespace WSAD_Final_Project.Models
             );
 
             modelBuilder.Entity<GolfGear>().HasData(
-                new GolfGear { Name = "Paradym", Brand = "Callaway", Type = "Driver"},
-                new GolfGear { Name = "Stealth 2", Brand = "Taylormade", Type = "Driver" },
-                new GolfGear { Name = "Vokey", Brand = "Titleist", Type = "Wedge" },
-                new GolfGear { Name = "G425", Brand = "Ping", Type = "Irons" },
-                new GolfGear { Name = "Spider", Brand = "Taylormade", Type = "Putter" }
+                new GolfGear { Id = 1, Name = "Paradym", Brand = "Callaway", Type = "Driver"},
+                new GolfGear { Id = 2, Name = "Stealth 2", Brand = "Taylormade", Type = "Driver" },
+                new GolfGear { Id = 3, Name = "Vokey", Brand = "Titleist", Type = "Wedge" },
+                new GolfGear { Id = 4, Name = "G425", Brand = "Ping", Type = "Irons" },
+                new GolfGear { Id = 5, Name = "Spider", Brand = "Taylormade", Type = "Putter" }
             );
         }
     }
