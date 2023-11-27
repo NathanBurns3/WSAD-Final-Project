@@ -12,7 +12,7 @@ namespace WSAD_Final_Project.Controllers
         }
         public IActionResult Index()
         {
-            return View(_context.golfGears);
+            return View(_context.golfGears.ToList());
         }
     }
 }

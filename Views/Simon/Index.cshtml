@@ -1,0 +1,40 @@
+﻿@model List<GolfGear>
+
+@{
+    ViewData["Title"] = "Golfing";
+}
+
+<div class="text-center bg-light p-3">
+    <h1 class="display-4 mb-2 text-primary">Simon Manzler</h1>
+    <h4 class="mb-3 text-secondary">Golfing</h4>
+    <div class="col-md-8 mx-auto">
+        <p class="mb-5 px-5 text-dark">
+            I just started golfing this year and love being outside and playing with friends. It is a great excuse to get away.
+        </p>
+    </div>
+
+    <h4 class="display-4 mt-5 text-primary">Golfing</h4>
+    <div class="table-responsive mb-5">
+        <table class="table table-striped table-hover">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Brand</th>
+                    <th>Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var gear in Model)
+                {
+                    <tr>
+                        <td>@gear.Id</td>
+                        <td>@gear.Name</td>
+                        <td>@gear.Brand</td>
+                        <td>@gear.Type</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
