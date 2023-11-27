@@ -14,7 +14,7 @@ namespace WSAD_Final_Project.Controllers
 
         public IActionResult Index()
         {
-            return View(_context.Games);
+            return View(_context.Games.ToList());
         }
     }
 }
