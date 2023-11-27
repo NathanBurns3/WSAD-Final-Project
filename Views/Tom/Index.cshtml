@@ -24,6 +24,8 @@
                     <th>Model</th>
                     <th>Year</th>
                     <th>Year Purchased</th>
+                    <th></th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -35,9 +37,23 @@
                         <td>@car.CarModel</td>
                         <td>@car.CarYear</td>
                         <td>@car.BoughtYear</td>
+                        <td>
+                            <a href="@Url.Action("Edit", "Tom", new { id = car.CarId })" class="btn btn-sm btn-primary">Edit</a>
+                        </td>
+                        <td>
+                            <a href="@Url.Action("Delete", "Tom", new { id = car.CarId })" class="btn btn-sm btn-danger">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
+
+            @if (TempData["SuccessMessage"] != null)
+            {
+                <div class="alert alert-success">
+                    @TempData["SuccessMessage"]
+                </div>
+            }
         </table>
     </div>
+    <a href="@Url.Action("Add", "Tom")" class="btn btn-primary btn-lg">Add a new car</a>
 </div>
