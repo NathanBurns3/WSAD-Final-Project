@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {}
+    "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {
+    "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
+        "projectUniqueName": "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
         "projectName": "WSAD-Final-Project",
-        "projectPath": "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
-        "packagesPath": "C:\\Users\\tommy\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\tommy\\OneDrive\\Desktop\\WebDev\\FinalProject\\WSAD-Final-Project\\obj\\",
+        "projectPath": "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
+        "packagesPath": "C:\\Users\\siman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\tommy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\siman\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.305\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -49,6 +50,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[7.0.11, )"
             }
           },
           "imports": [
@@ -70,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
         }
       }
     }
