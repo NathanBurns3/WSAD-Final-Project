@@ -6,7 +6,7 @@ namespace WSAD_Final_Project.Models
     {
         [Key]
         [Required(ErrorMessage = "Please Enter a Game ID")]
-        public int GameId { get; }
+        public int GameId { get; set; }
 
         [Required(ErrorMessage = "Please Enter a Game Title")]
         public string? Title { get; set; }
@@ -15,6 +15,6 @@ namespace WSAD_Final_Project.Models
         public string? Developer { get; set; }
 
         [Required(ErrorMessage = "Please Enter the Game Release Year")]
-        public string? ReleaseYear { get; set; }
+        public int? ReleaseYear { get; set; }
     }
 }
