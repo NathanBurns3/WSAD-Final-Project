@@ -12,6 +12,8 @@ builder.Services.AddDbContext<HobbyContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("HobbyContext")));
 builder.Services.AddDbContext<CarsContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CarsContext")));
+builder.Services.AddDbContext<GamesContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("GamesContext")));
 
 var app = builder.Build();
 
