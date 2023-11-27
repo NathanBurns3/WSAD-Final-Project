@@ -30,3 +30,7 @@ appsettings.Secrets.json
 /obj/Debug/net7.0/WSAD-Final-Project.AssemblyInfo.cs
 /obj/Debug/net7.0/scopedcss/Views/Shared/_Layout.cshtml.rz.scp.css
 /obj/Debug/net7.0/WSAD-Final-Project.RazorAssemblyInfo.cs
+*.dll
+/bin/Debug/net7.0/Microsoft.Bcl.AsyncInterfaces.dll
+/bin/Debug/net7.0/WSAD-Final-Project.deps.json
+*.json
