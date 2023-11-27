@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\siman\\Source\\Repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {}
+    "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {}
   },
   "projects": {
-    "C:\\Users\\siman\\Source\\Repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {
+    "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\siman\\Source\\Repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
+        "projectUniqueName": "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
         "projectName": "WSAD-Final-Project",
-        "projectPath": "C:\\Users\\siman\\Source\\Repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
+        "projectPath": "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\WSAD-Final-Project.csproj",
         "packagesPath": "C:\\Users\\siman\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\siman\\Source\\Repos\\WSAD-Final-Project\\obj\\",
+        "outputPath": "C:\\Users\\siman\\source\\repos\\WSAD-Final-Project\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\siman\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.11, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.11, )"
             }
