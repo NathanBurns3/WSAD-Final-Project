@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WSAD_Final_Project.Models;
 
@@ -10,9 +11,11 @@ using WSAD_Final_Project.Models;
 namespace WSAD_Final_Project.Migrations
 {
     [DbContext(typeof(HobbyContext))]
-    partial class HobbyContextModelSnapshot : ModelSnapshot
+    [Migration("20231122002127_Golf")]
+    partial class Golf
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
