@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using WSAD_Final_Project.Models;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WSAD_Final_Project.Controllers
 {
@@ -41,6 +42,46 @@ namespace WSAD_Final_Project.Controllers
                 ModelState.AddModelError("", "Please correct all errors");
                 return View(game);
             }
+        }
+
+        [HttpGet]
+        public ViewResult Edit(int id) 
+        {
+            var game = _context.Games.Find(id);
+            return View(game);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(Videogames game)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Games.Update(game);
+                _context.SaveChanges();
+
+                return RedirectToAction("Index");
+            }
+            else
+            {
+                ModelState.AddModelError("", "Please correct all errors");
+                return View(game);
+            }
+        }
+
+        [HttpGet]
+        public ViewResult Delete(int id)
+        {
+            var game = _context.Games.Find(id);
+            return View(game);
+        }
+
+        [HttpPost]
+        public IActionResult Delete(Videogames game)
+        {
+            _context.Games.Remove(game);
+            _context.SaveChanges();
+
+            return RedirectToAction("Index");
         }
     }
 }
