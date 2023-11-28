@@ -5,7 +5,6 @@ namespace WSAD_Final_Project.Models
     public class Videogames
     {
         [Key]
-        [Required(ErrorMessage = "Please Enter a Game ID")]
         public int GameId { get; set; }
 
         [Required(ErrorMessage = "Please Enter a Game Title")]
@@ -15,6 +14,7 @@ namespace WSAD_Final_Project.Models
         public string? Developer { get; set; }
 
         [Required(ErrorMessage = "Please Enter the Game Release Year")]
+        [Range(1900, 2023, ErrorMessage = "Please Enter a Valid Year (1900 - 2023)")]
         public int? ReleaseYear { get; set; }
     }
 }
