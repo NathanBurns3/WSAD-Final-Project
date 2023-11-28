@@ -4,7 +4,7 @@
     ViewData["Title"] = "Videogames I've played";
 }
 
-<div class="text-center bg-light">
+<div class="text-center bg-light p-5">
     <h1 class="display-4 mb-2 text-primary">Vishvak</h1>
     <h4 class="mb-3 text-secondary">Videogames</h4>
     <div class="col-md-8 mx-auto">
@@ -12,11 +12,11 @@
             I've loved video games ever since I was young, I was a Nintendo fanboy at heart, 
             with a Nintendo DS, a Wii and Wii U, an eventually a Nintendo Switch. I would game on my Wii and 
             Switch for hours at a time. Back in the day I would get my friends over and we would game for hours.
-            I even figured out how to homebrew my Wii U and install mods for games.c
+            I even figured out how to homebrew my Wii U and install mods for games
         </p>
     </div>
 
-    <h4 class="display-4 mt-5 text-primary">Games I've Played' </h4>
+    <h2 class="display-4 mt-5 text-primary">Games I've Played</h2>
     <div class="table-responsive mb-5">
         <table class="table table-striped table-hover">
             <thead class="bg-primary text-white">
@@ -24,6 +24,7 @@
                     <th>Game Title</th>
                     <th>Developer</th>
                     <th>Year Release</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
@@ -33,9 +34,14 @@
                         <td>@game.Title</td>
                         <td>@game.Developer</td>
                         <td>@game.ReleaseYear</td>
+                        <td>
+                            <a asp-controller="Vishvak" asp-action="Edit" asp-route-id="@game.GameId" class="btn btn-secondary">Edit</a>
+                            <a asp-controller="Vishvak" asp-action="Delete" asp-route-id="@game.GameId" class="btn btn-danger">Delete</a>
+                        </td>
                     </tr>
                 }
             </tbody>
         </table>
+        <a asp-controller="Vishvak" asp-action="Add" class="btn btn-primary" >Add a Game</a>
     </div>
 </div>
