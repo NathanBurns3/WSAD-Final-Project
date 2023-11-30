@@ -22,6 +22,7 @@
                     <th>Name</th>
                     <th>Brand</th>
                     <th>Type</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -32,9 +33,17 @@
                         <td>@gear.Name</td>
                         <td>@gear.Brand</td>
                         <td>@gear.Type</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@gear.Id" class="btn btn-primary">Edit</a>
+                            <form asp-action="Delete" method="post" style="display:inline;">
+                                <input type="hidden" name="id" value="@gear.Id" />
+                                <input type="submit" value="Delete" class="btn btn-danger" />
+                            </form>
+                        </td>
                     </tr>
                 }
             </tbody>
         </table>
+        <a asp-action="Add" class="btn btn-success mt-3">Add Gear</a>
     </div>
 </div>

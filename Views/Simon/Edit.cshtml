@@ -1,0 +1,29 @@
+@model GolfGear
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form asp-action="Edit">
+    <input type="hidden" asp-for="Id" />
+    <div class="form-group">
+        <label asp-for="Name" class="control-label">Name</label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Brand" class="control-label">Brand</label>
+        <input asp-for="Brand" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Type" class="control-label">Type</label>
+        <input asp-for="Type" class="form-control" />
+    </div>
+    <div class="form-group mt-3 mb-2">
+        <input type="submit" value="Save" class="btn btn-primary" />
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
